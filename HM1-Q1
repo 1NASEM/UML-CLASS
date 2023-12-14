@@ -1,0 +1,35 @@
+using System;
+
+class ItemDiscount
+{
+    static void Main(string[] args)
+    {
+
+        double firstItem, secondItem, thirdItem;
+        double total = 0;
+        double discount;
+        double netPayable;
+
+        
+        Console.Write("Enter the price of item 1: ");
+        firstItem = double.Parse(Console.ReadLine());
+
+        Console.Write("Enter the price of item 2: ");
+        secondItem = double.Parse(Console.ReadLine());
+
+        Console.Write("Enter the price of item 3: ");
+        thirdItem = double.Parse(Console.ReadLine());
+
+        
+        total = firstItem + secondItem + thirdItem;
+ 
+        discount = total * 0.1;
+
+        netPayable = total - discount;
+
+       
+        Console.WriteLine("\nTotal price: $" + total);
+        Console.WriteLine("Discount: $"+ discount);
+        Console.WriteLine("Net amount payable: $"+ netPayable);
+    }
+}
